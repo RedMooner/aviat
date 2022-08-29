@@ -1,6 +1,8 @@
 # aviat
 ![PyPI](https://img.shields.io/pypi/v/aviat)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aviat)
+
+![GitHub followers](https://img.shields.io/github/followers/RedMooner?style=social)
 ## Получить расписание одной командой (КГАПОУ Авиатехникум)
 # Установка 
     pip install aviat
