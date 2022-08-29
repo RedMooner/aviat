@@ -43,6 +43,13 @@ parser.add_argument(
     help=f'provide an integer (default: current month)'
 )
 
+parser.add_argument(
+    '--save',
+    type=str,
+    default="/",
+    help=f'ente a settings mode'
+)
+a = ""
 
 def main():
     args = parser.parse_args()
@@ -62,7 +69,7 @@ def main():
             link = i.find('div', class_='header').find('a').get("href")
             tqdm.write(f"{url}{link}")
             urllib.request.urlretrieve(
-                f"https://permaviat.ru{link}", "temp.pdf")
+                f"https://permaviat.ru{link}", f"{args.save}\\temp.pdf")
             isConsists = True
         pbar.update(1)
     pbar.close()
