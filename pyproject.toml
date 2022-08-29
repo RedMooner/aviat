@@ -1,12 +1,17 @@
 [tool.poetry]
 name = "aviat"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = ["RedMooner"]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.extras]
+beautifulsoup4 = ["beautifulsoup4"]
+argparse = ["argparse"]
+tqdm = ["tqdm"]
 
 [tool.poetry.dev-dependencies]
 
